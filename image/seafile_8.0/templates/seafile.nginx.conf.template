@@ -22,8 +22,8 @@ server {
 {% if https -%}
     listen 443;
     ssl on;
-    ssl_certificate      /shared/ssl/{{ domain }}.crt;
-    ssl_certificate_key  /shared/ssl/{{ domain }}.key;
+    ssl_certificate      /shared/ssl/server.crt;
+    ssl_certificate_key  /shared/ssl/server.key;
 
     ssl_ciphers ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS;
 
