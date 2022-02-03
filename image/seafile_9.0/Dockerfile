@@ -5,7 +5,7 @@ ENV SEAFILE_SERVER=seafile-server SEAFILE_VERSION=
 RUN apt-get update --fix-missing
 
 # Utility tools
-RUN apt-get install -y vim htop net-tools psmisc wget curl git
+RUN apt-get install -y vim htop net-tools psmisc wget curl git ssl-cert
 
 # For suport set local time zone.
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get install tzdata -y
